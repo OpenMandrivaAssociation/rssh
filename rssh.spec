@@ -14,7 +14,6 @@ BuildRequires:	openssh-server
 BuildRequires:	cvs
 BuildRequires:	rdist
 BuildRequires:	rsync
-Buildroot:	%{_tmppath}/%{name}-%{version}-buildroot
 
 %description
 rssh is a restricted shell for use with ssh, which allows the system
