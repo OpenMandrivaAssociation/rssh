@@ -1,7 +1,7 @@
 Summary:	Restricted shell for scp or sftp
 Name:		rssh
 Version:	2.3.2
-Release:	%mkrel 6
+Release:	%mkrel 7
 License:	BSD
 Group:		Networking/Remote access
 URL:		http://www.pizzashack.org/rssh/
