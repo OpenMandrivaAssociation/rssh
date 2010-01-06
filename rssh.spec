@@ -37,6 +37,20 @@ rm -rf %{buildroot}
 
 install -m 755 -D conf_convert %{buildroot}%{_datadir}/%{name}/conf_convert
 
+cat > README.urpmi.upgrade <<EOF
+Subversion support
+
+The 2.3.2-8mdv release of the rssh package adds support for Subversion by
+adding an additional configuration parameter that, if set, allows an rssh user
+to run svnserve -t.
+
+This support requires changing the /etc/rssh.conf file format to add an
+additional binary digit to the permissions field.  The package will attempt to
+make that change automatically during the upgrade, disabling svnserve for all
+users by default, but you may want to double-check the resulting /etc/rssh.conf
+file to be sure it's correct.
+EOF
+
 %clean
 rm -rf %{buildroot}
 
@@ -57,7 +71,7 @@ fi
 
 %files
 %defattr(-,root,root)
-%doc AUTHORS ChangeLog CHROOT COPYING README SECURITY TODO
+%doc AUTHORS ChangeLog CHROOT COPYING README SECURITY TODO README.urpmi.upgrade
 %config(noreplace) %{_sysconfdir}/rssh.conf
 %attr(0755,root,root) %{_bindir}/rssh
 %attr(4755,root,root) %{_libexecdir}/rssh_chroot_helper
