@@ -1,7 +1,7 @@
 Summary:	Restricted shell for scp or sftp
 Name:		rssh
 Version:	2.3.2
-Release:	%mkrel 8
+Release:	%mkrel 9
 License:	BSD
 Group:		Networking/Remote access
 URL:		http://www.pizzashack.org/rssh/
@@ -37,7 +37,7 @@ rm -rf %{buildroot}
 
 install -m 755 -D conf_convert %{buildroot}%{_datadir}/%{name}/conf_convert
 
-cat > README.urpmi.upgrade <<EOF
+cat > README.2.2.8-8mdv.upgrade.urpmi <<EOF
 Subversion support
 
 The 2.3.2-8mdv release of the rssh package adds support for Subversion by
@@ -71,7 +71,7 @@ fi
 
 %files
 %defattr(-,root,root)
-%doc AUTHORS ChangeLog CHROOT COPYING README SECURITY TODO README.urpmi.upgrade
+%doc AUTHORS ChangeLog CHROOT COPYING README SECURITY TODO README.2.2.8-8mdv.upgrade.urpmi
 %config(noreplace) %{_sysconfdir}/rssh.conf
 %attr(0755,root,root) %{_bindir}/rssh
 %attr(4755,root,root) %{_libexecdir}/rssh_chroot_helper
