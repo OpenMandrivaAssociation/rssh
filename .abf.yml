@@ -1,3 +1,4 @@
 sources:
-  "rssh-2.3.3.tar.gz:"	0a6dd80b5e6059e0db12c9f1276121dd966b610a
-  "rssh-2.3.3.tar.gz.sig:"	0e0a63b37c90425289f080076fc4e7aca8a8bde2
+  "rssh-2.3.3.tar.gz": 0a6dd80b5e6059e0db12c9f1276121dd966b610a
+  rssh-2.3.4.tar.gz: e13ae1fdce4b0c89ef70f4695689139c8409e2e8
+  rssh-2.3.4.tar.gz.sig: 319bd42102f5dddde8808336e5bcb791ec8fcb76
