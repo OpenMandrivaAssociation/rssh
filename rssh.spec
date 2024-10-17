@@ -4,7 +4,7 @@ Version:	2.3.4
 Release:	2
 License:	BSD
 Group:		Networking/Remote access
-URL:		http://www.pizzashack.org/rssh/
+URL:		https://www.pizzashack.org/rssh/
 #gw this is tar.gz for signature checking
 Source0:	http://prdownloads.sourceforge.net/rssh/%{name}-%{version}.tar.gz
 Source1:	http://prdownloads.sourceforge.net/rssh/%{name}-%{version}.tar.gz.sig 
